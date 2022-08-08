@@ -70,3 +70,25 @@ int unsigned_integer(va_list list)
 		return (-1);
 	return (print_unsigned_number(num));
 }
+
+/**
+ * print_address - prints address of input in hexa format
+ * @l: va_list arguments from _printf
+ * @f: pointer to the struct flags that determines
+ * if a flag is passed to _printf
+ * Return: number of chars printed
+ */
+int print_address(va_list list)
+{
+	char *str;
+	unsigned long int p = va_arg(list, unsigned long int);
+
+	register int count = 0;
+
+	if (!p)
+		return(_puts("(nil)"));
+	str = convert(p, 16, 1);
+	count += _puts("0x");
+	count += _puts(str);
+	return (count);
+}

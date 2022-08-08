@@ -25,6 +25,7 @@ int print_percent(__attribute__((unused))va_list list);
 int print_integer(va_list list);
 int unsigned_integer(va_list list);
 int parser(const char *format, conver_t funcs[], va_list va);
+int print_address(va_list list);
 
 /*Helper functs*/
 int print_binary(va_list list);
@@ -40,5 +41,7 @@ unsigned int base_len(unsigned int num, int base);
 char *_memcpy(char *dest, char *src, unsigned int n);
 int print_number(va_list args);
 int print_unsigned_number(unsigned int n);
+int _puts(char *str);
+char *convert(unsigned long int num, int base, int lowercase);
 
 #endif
