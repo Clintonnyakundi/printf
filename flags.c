@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdarg.h>
 /**
  * get_flag - flags if _printf finds
  * @s: that holds the flag specifier
