@@ -1,4 +1,5 @@
 This is a collaborative project between Omojuwa Emmanuel Oluwagbenga and Clinton Nyakundi Mokaya, Software Engineering students at ALX Africa. The project aims to mimic the printf standard library function that formats and prints data.
+The project was started on the 8th of August, 2022.
 Description
 
 The _printf() function produces output according to a format which is described below. This function write its output to the stdout, the standard output stream. Returns the count of printed characters when the function is successful and -1 when the function fails.
